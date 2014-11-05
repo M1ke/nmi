@@ -131,13 +131,13 @@ class Nmi3Step {
 				$content_type='text/xml';
 			break;
 		}
-		$options=array(
-			'http'=>array(
+		$options=[
+			'http'=>[
 				'header'=>"Content-type: $content_type\r\n",
 				'method'=>'POST',
 				'content'=>$data,
-			),
-		);
+			],
+		];
 		$context=stream_context_create($options);
 		$result=file_get_contents($url,false,$context);
 		return $result;
