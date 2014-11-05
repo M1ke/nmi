@@ -14,3 +14,9 @@ Currently the only implementation. See `example.php` for information on how to u
 
     // Sends the payment with a provided token. Returns a payment result or throws an exception
     $payment=$nmi->submit_payment($_GET['token-id']);
+
+## Installation
+
+Install using [Composer](http://getcomposer.org).
+
+    php composer.phar require m1ke/nmi:dev-x0.1
