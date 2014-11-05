@@ -1,5 +1,7 @@
 {
     "name": "m1ke/nmi",
+    "description": "An API implementation for the NMI (Network Merchants International) payment gateway",
+    "license": "MIT",
     "authors": [
         {
             "name": "m1ke",
@@ -8,6 +10,9 @@
     ],
     "require": {
         "php": ">=5.4.0"
+    },
+    "autoload": {
+        "classmap": ["Nmi3Step.php"]
     },
     "minimum-stability": "dev"
 }
